@@ -1,0 +1,8 @@
+{
+  "name": "rvc-to-onnx-minimal",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "rvc-onnx-web": "^1.0.0"
+  }
+}
