@@ -39,7 +39,7 @@ Use a premade RVC notebook (such as [Applio's](https://colab.research.google.com
 - Preprocess audio to 40 kHz.
 - **Synthetic voices:** Use the **RMVPE** pitch extractor. It tracks robotic pitch artifacts more accurately than algorithms that smooth them out.
 - Train for 150–200 epochs (90 can already give usable results).
-- Set batch size to 40 to saturate a typical Colab GPU. Adjust down if you hit memory limits.
+- Set batch size to 4 for better results. You can also set it to 40 to use as much of the Colab GPU as possible and get each epoch faster, but it will be less good. Adjust it down if you hit memory limits.
 
 **Step 4: Download and Convert**
 
@@ -72,3 +72,5 @@ By choosing the (currently as of 19 of may 2026) free T4 GPU instance, I execute
 ### Finally, converting to the format I needed
 
 If you need the pythorch extension then you would be done by now. But since I needed this other one, I had to keep going. I made this bash script and incorporated a javascript package for this exact task into this github. And that was the end of it.
+
+Because of how she was made with japanese sounds, the final result is much better at speaking japanese than any other language, so TTS voices that speak japanese can work better to support her to speak in the same tones as those in music videos. She can speak english and spanish if you give it TTS voices in those languages.

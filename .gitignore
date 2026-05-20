@@ -163,3 +163,4 @@ cython_debug/
 dataset.zip
 *.pth
 *.onnx
+tools/Adachi_Rei_a.index
